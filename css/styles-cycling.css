@@ -1,0 +1,288 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Body and font settings */
+body {
+  font-family: 'Arial, sans-serif';
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.navbar a {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Hero section styles */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+  background: url('images/cycling.jpg') no-repeat center center/cover;
+  height: 100vh; /* Adjust as needed */
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cta-button {
+  background-color: #ff6347;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #ff4500;
+}
+
+/* Tips section styles */
+.tips {
+  background-color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.tips h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.tips article {
+  background-color: seagreen;
+  color: white;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tips article:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tips h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.tips p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* User experiences section styles */
+.user-experiences {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+}
+
+.user-experiences h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.user-experiences article {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-experiences article:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.user-experiences h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.user-experiences p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Footer styles */
+footer {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 1rem;
+}
+
+footer .social-media a {
+  color: rgb(0, 0, 0);
+  margin: 0 0.5rem;
+  transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+  color: #ff6347;
+}
+/* General Mobile Styling */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .navbar a {
+      font-size: 1rem;
+      padding: 5px 10px;
+      display: block;
+  }
+
+  /* Hero Section */
+  .hero {
+      height: 60vh; /* Reduce height for smaller screens */
+  }
+
+  .hero-text h1 {
+      font-size: 1.5rem; /* Adjust heading size */
+  }
+
+  .hero-text p {
+      font-size: 1rem; /* Adjust paragraph size */
+  }
+
+  /* Tips Section */
+  .tips {
+      padding: 10px;
+  }
+
+  .tips h2 {
+      font-size: 1.5rem; /* Adjust heading size for tips section */
+  }
+
+  .tips article {
+      margin-bottom: 15px;
+  }
+
+  .tips h3 {
+      font-size: 1.2rem; /* Adjust heading size for articles */
+  }
+
+  .tips p {
+      font-size: 0.9rem; /* Adjust paragraph size for readability */
+  }
+
+  /* User Experiences Section */
+  .user-experiences h2 {
+      font-size: 1.5rem;
+  }
+
+  .user-experiences article {
+      margin-bottom: 15px;
+  }
+
+  .user-experiences h3 {
+      font-size: 1.2rem;
+  }
+
+  .user-experiences p {
+      font-size: 0.9rem;
+  }
+
+  /* Footer */
+  footer {
+      font-size: 0.8rem;
+      text-align: center;
+      padding: 10px;
+  }
+
+  .social-media a {
+      display: block;
+      margin: 5px 0;
+  }
+}
+
+/* Small Screens (Mobile Phones) */
+@media (max-width: 480px) {
+  .hero {
+      height: 50vh; /* Further reduce hero height */
+  }
+
+  .hero-text h1 {
+      font-size: 1.2rem;
+  }
+
+  .hero-text p {
+      font-size: 0.9rem;
+  }
+
+  .tips h2 {
+      font-size: 1.2rem; /* Adjust heading size for tips section */
+  }
+
+  .tips h3 {
+      font-size: 1rem; /* Further adjust heading size for articles */
+  }
+
+  .tips p {
+      font-size: 0.8rem; /* Further adjust paragraph size for readability */
+  }
+
+  .user-experiences h2 {
+      font-size: 1.2rem;
+  }
+
+  .user-experiences h3 {
+      font-size: 1rem;
+  }
+
+  .user-experiences p {
+      font-size: 0.8rem;
+  }
+
+  footer {
+      font-size: 0.7rem;
+  }
+}

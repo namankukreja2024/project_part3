@@ -1,0 +1,314 @@
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+
+body {
+    font-family: 'Arial, sans-serif';
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.navbar a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    background: url('images/home_bg.jpg') no-repeat center center/cover;
+    height: 100vh; }
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    background-color: #ff6347;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff4500;
+}
+
+
+.features {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.features ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features li {
+    background-color:seagreen;
+    color: white;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    flex: 1 1 200px;
+    transition: transform 0.3s;
+}
+
+.features li:hover {
+    transform: scale(1.05);
+}
+
+
+.testimonials {
+    background-color: #000000;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial {
+    background-color: #000000;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+}
+
+.blog {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.blog-post {
+    background-color: seagreen;
+    color: white;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.blog-post:hover {
+    transform: scale(1.05);
+}
+
+.blog-post h3 a {
+    color: white;
+}
+
+footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer .social-media a {
+    color: rgb(0, 0, 0);
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    color: #ff6347;
+}
+/* media queries for responsiveness */
+/* General Mobile Styling */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+        padding: 5px 10px;
+        display: block;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 70vh; /* Reduce height for smaller screens */
+    }
+
+    .hero-text {
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem; /* Adjust heading size */
+    }
+
+    .hero-text p {
+        font-size: 1rem; /* Adjust paragraph size */
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    /* Features Section */
+    .features {
+        padding: 10px;
+    }
+
+    .features ul {
+        padding-left: 20px; /* Add padding for better spacing */
+        font-size: 0.9rem;
+    }
+
+    .features li {
+        margin-bottom: 10px;
+    }
+
+    /* Testimonials */
+    .testimonials .testimonial {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    /* Blog Posts */
+    .blog-post {
+        font-size: 0.9rem;
+    }
+
+    .blog-post h3 {
+        font-size: 1.2rem;
+    }
+
+    .blog-post p {
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .social-media a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+/* Small Screens (Mobile Phones) */
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-text p {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .features ul {
+        font-size: 0.8rem;
+    }
+
+    .features li {
+        margin-bottom: 8px;
+    }
+
+    .testimonial {
+        font-size: 0.8rem;
+    }
+
+    .blog-post h3 {
+        font-size: 1rem;
+    }
+
+    .blog-post p {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+}

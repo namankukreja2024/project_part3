@@ -1,0 +1,319 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Body and font settings */
+body {
+    font-family: 'Arial, sans-serif';
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add transparency */
+}
+
+.navbar a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    text-align: center;
+    color: rgb(255, 254, 254);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Content section styles */
+.content {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.content ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content li {
+    background-color: seagreen;
+    color: white;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    flex: 1 1 200px;
+    transition: transform 0.3s;
+}
+
+.content li:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Testimonials section styles */
+.testimonials {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 2rem;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial {
+    background-color: #ffffff;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+}
+
+/* FAQ section styles */
+.faq {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.faq-item {
+    background-color: burlywood;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.faq-item:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.faq-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer styles */
+footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer .social-media a {
+    color: rgb(0, 0, 0);
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    color: #ff6347;
+}
+/* General Mobile Styling */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+        padding: 5px 10px;
+        display: block;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 60vh; /* Reduce height for smaller screens */
+    }
+
+    .hero-text h1 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    .hero-text p {
+        font-size: 1rem; /* Adjust paragraph size */
+    }
+
+    /* Content Section */
+    .content {
+        padding: 10px;
+    }
+
+    .content h2 {
+        font-size: 1.5rem; /* Adjust heading size for content section */
+    }
+
+    .content p {
+        font-size: 0.9rem; /* Adjust paragraph size for readability */
+    }
+
+    .content ul {
+        padding-left: 20px; /* Indent list items for better readability */
+    }
+
+    .content ul li {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+
+    /* Testimonials Section */
+    .testimonials h2 {
+        font-size: 1.5rem;
+    }
+
+    .testimonial {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    /* FAQ Section */
+    .faq h2 {
+        font-size: 1.5rem;
+    }
+
+    .faq-item {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    .faq-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .faq-item p {
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .social-media a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+/* Small Screens (Mobile Phones) */
+@media (max-width: 480px) {
+    .hero {
+        height: 50vh; /* Further reduce hero height */
+    }
+
+    .hero-text h1 {
+        font-size: 1.2rem;
+    }
+
+    .hero-text p {
+        font-size: 0.9rem;
+    }
+
+    .content h2 {
+        font-size: 1.2rem;
+    }
+
+    .content p {
+        font-size: 0.8rem;
+    }
+
+    .content ul li {
+        font-size: 0.8rem;
+        margin-bottom: 8px;
+    }
+
+    .testimonials h2 {
+        font-size: 1.2rem;
+    }
+
+    .testimonial p {
+        font-size: 0.8rem;
+    }
+
+    .faq h2 {
+        font-size: 1.2rem;
+    }
+
+    .faq-item h3 {
+        font-size: 1rem;
+    }
+
+    .faq-item p {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+}

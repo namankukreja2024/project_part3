@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase - VSEAT</title>
+    <link rel="stylesheet" href="css/styles-purchase.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EQG4PK35CT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EQG4PK35CT');
+</script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="benefits.html">Benefits</a>
+            <a href="contact.html">Contact</a>
+            <a href="cycling-comfort.html">Cycling Tips</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="purchase-section">
+            <h1>Complete Your Purchase</h1>
+            <div class="product-summary">
+                <img id="product-image" src="images/default.jpg" alt="Product Image">
+                <h2 id="product-name">Product Name</h2>
+                <p id="product-price">$0.00</p>
+            </div>
+            
+            <div class="quantity-selector">
+                <label for="quantity">Quantity:</label>
+                <button id="decrease-btn">-</button>
+                <input type="number" id="quantity" value="1" min="1">
+                <button id="increase-btn">+</button>
+            </div>
+            <p>Total Price: <span id="total-price">$49.99</span></p>
+            <button id="buy-now-btn">Confirm Purchase</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 VSEAT. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/purchase.js"></script>
+</body>
+</html>
